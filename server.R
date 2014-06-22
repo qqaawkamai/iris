@@ -8,7 +8,6 @@ shinyServer(
     function(input, output) {
         
         output$inputs <- renderPrint({
-            mu <- input$mu
             sl <- input$sl
             sw <- input$sw
             pl <- input$pl
@@ -18,7 +17,6 @@ shinyServer(
             dataframe})
         
         output$prediction <- renderPrint({
-            mu <- input$mu
             sl <- input$sl
             sw <- input$sw
             pl <- input$pl
