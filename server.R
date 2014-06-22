@@ -24,8 +24,6 @@ shinyServer(
             
             dataframe <- data.frame(Sepal.Length = sl, Sepal.Width = sw, Petal.Length = pl, Petal.Width = pw)
             
-            
-            
             as.character(predict(modFit, dataframe))            
             })
         
